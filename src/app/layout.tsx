@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Geist, Geist_Mono, Lalezar } from "next/font/google"
+import { Lalezar } from "next/font/google"
 
 import "./globals.css"
 

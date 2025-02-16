@@ -2,9 +2,9 @@ import { Facebook, Instagram, Twitter } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-secondary text-secondary-foreground py-8">
-      <div className="container flex flex-col md:flex-row justify-between items-center">
-        <div className="text-center md:text-left mb-4 md:mb-0">
+    <footer className="bg-secondary px-4 py-8 text-secondary-foreground">
+      <div className="flex flex-col items-center justify-between md:flex-row">
+        <div className="mb-4 text-center md:mb-0 md:text-left">
           <h3 className="font-bold">F.S.BEGUES</h3>
           <p>Pabellón Municipal "Jaume Viñas i Pi"</p>
           <p>Begues, Baix Llobregat</p>

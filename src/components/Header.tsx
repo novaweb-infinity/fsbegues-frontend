@@ -22,7 +22,7 @@ const teams = [
 
 export function Header() {
   return (
-    <div className="flex items-center fixed z-10 bg-white w-full p-4 justify-between h-16">
+    <div className="flex items-center fixed z-10 bg-secondary w-full p-4 justify-between h-16">
       <div>
         <Link href="/" className="text-2xl font-bold text-black">
           F.S.BEGUES
