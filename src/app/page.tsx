@@ -1,101 +1,65 @@
-import Image from "next/image";
+import Image from "next/image"
+
+import { Footer } from "@/components/Footer"
+import { Header } from "@/components/Header"
+import { NewsCard } from "@/components/NewsCard"
+import { Button } from "@/components/ui/button"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="flex-grow">
+        <section className="relative h-[50vh] mt-16 w-full">
+          <Image src="/pabellon.avif" alt="F.S.Begues" fill style={{ objectFit: "cover" }} priority />
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+            <h1 className="text-6xl font-bold text-white">F.S.BEGUES</h1>
+          </div>
+        </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+        <section className="container p-4 my-12">
+          <h2 className="text-3xl font-bold mb-6">Sobre Nosotros</h2>
+          <p className="text-lg mb-4">
+            Fundado en abril de 2015, el Futsal Begues nació con el objetivo de fomentar el fútbol sala en la comunidad
+            de Begues, un encantador pueblo ubicado en el Baix Llobregat. Desde su creación, el club ha crecido
+            significativamente, convirtiéndose en un referente local en el deporte.
+          </p>
+          <p className="text-lg mb-4">
+            Actualmente, el FS Begues cuenta con un total de siete categorías, abarcando desde el fútbol base hasta
+            equipos de veteranos, lo que permite que personas de todas las edades disfruten del fútbol sala en un
+            ambiente competitivo y familiar.
+          </p>
+          <p className="text-lg mb-6">
+            La sede oficial del club se encuentra en el Pabellón Municipal "Jaume Viñas i Pi" de Begues, un espacio
+            moderno y acogedor donde se desarrollan tanto entrenamientos como competiciones.
+          </p>
+          <Button size="lg">Únete a Nosotros</Button>
+        </section>
+
+        <section className="bg-muted p-4 py-12">
+          <div className="container">
+            <h2 className="text-3xl font-bold mb-6">Últimas Noticias</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <NewsCard
+                title="Victoria del equipo senior"
+                date="15 de Febrero, 2025"
+                description="Nuestro equipo senior logró una importante victoria en el último partido de la liga."
+              />
+              <NewsCard
+                title="Nuevo entrenador para el equipo juvenil"
+                date="10 de Febrero, 2025"
+                description="Damos la bienvenida a nuestro nuevo entrenador para el equipo juvenil, que trae una gran experiencia."
+              />
+              <NewsCard
+                title="Torneo de verano"
+                date="5 de Febrero, 2025"
+                description="Anunciamos nuestro próximo torneo de verano. ¡Inscripciones abiertas!"
+              />
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <Footer />
     </div>
-  );
+  )
 }
