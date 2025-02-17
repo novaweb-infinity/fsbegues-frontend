@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lalezar.variable} tracking-wide antialiased`}>{children}</body>
+      <body className={`${lalezar.variable} antialiased`}>{children}</body>
     </html>
   )
 }

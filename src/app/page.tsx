@@ -1,11 +1,11 @@
 import Image from "next/image"
 
-import { ClubSection } from "@/components/ClubSection"
-import { Footer } from "@/components/Footer"
-import { Header } from "@/components/Header"
-import { HeroSection } from "@/components/HeroSection"
-import { NewsSection } from "@/components/NewsSection"
-import { ResultsTable } from "@/components/ResultsTable"
+import { ClubSection } from "@/components/Home/ClubSection"
+import { Footer } from "@/components/Home/Footer"
+import { Header } from "@/components/Home/Header"
+import { HeroSection } from "@/components/Home/HeroSection"
+import { NewsSection } from "@/components/Home/NewsSection"
+import { ResultsTable } from "@/components/Home/ResultsTable"
 
 export default function Home() {
   return (
