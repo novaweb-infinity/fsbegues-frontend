@@ -1,4 +1,4 @@
-import { NewsCard } from "@/components/Home/NewsCard"
+import NewsCard from "@/components/Home/NewsCard"
 
 interface NewsItem {
   image: string
@@ -29,7 +29,7 @@ const newsData: NewsItem[] = [
   },
 ]
 
-export function NewsSection() {
+export default function NewsSection() {
   return (
     <section className="bg-muted px-4 py-12">
       {/* <div className=""> */}

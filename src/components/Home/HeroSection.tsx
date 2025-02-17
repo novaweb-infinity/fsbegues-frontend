@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export function HeroSection() {
+export default function HeroSection() {
   const imageSrc = "/pabellon.webp"
   const title = "F.S.BEGUES"
   const altText = "F.S. Begues"

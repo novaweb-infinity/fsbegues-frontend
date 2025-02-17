@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 
-export function ClubSection() {
+export default function ClubSection() {
   return (
     <section className="bg-secondary px-4 py-12">
       <h2 className="mb-6 text-3xl font-bold">El Club</h2>

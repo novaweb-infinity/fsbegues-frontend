@@ -5,7 +5,7 @@ interface ResultRowProps {
   status: "win" | "draw" | "loss"
 }
 
-export function ResultRow({ category, result, opponent }: ResultRowProps) {
+export default function ResultRow({ category, result, opponent }: ResultRowProps) {
   return (
     <tr className="border-b text-lg">
       <td className="w-1/3 px-2 py-2">{category}</td>

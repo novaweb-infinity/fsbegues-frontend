@@ -9,7 +9,7 @@ interface NewsCardProps {
   description: string
 }
 
-export function NewsCard({ image, title, date, description }: NewsCardProps) {
+export default function NewsCard({ image, title, date, description }: NewsCardProps) {
   return (
     <Card>
       <Image src={image} alt="News" width={1920} height={1080} className="w-full rounded-t-md" />

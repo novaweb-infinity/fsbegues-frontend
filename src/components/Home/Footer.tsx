@@ -2,7 +2,7 @@ import { Facebook, Instagram, Twitter } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className="bg-secondary-foreground px-4 py-8 text-lg text-white">
       <div className="flex flex-col items-center justify-between md:flex-row">

@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Table, TableBody, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 
-import { ResultRow } from "./ResultRow"
+import ResultRow from "./ResultRow"
 
 interface ResultRowProps {
   category: string
@@ -10,7 +10,7 @@ interface ResultRowProps {
   status: "win" | "draw" | "loss"
 }
 
-export function ResultsTable() {
+export default function ResultsTable() {
   const headers = ["Categoría", "Resultado", "Rival"]
   const results: ResultRowProps[] = [
     { category: "Senior", result: "3 - 1", opponent: "FS Gavà", status: "win" },

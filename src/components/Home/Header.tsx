@@ -20,7 +20,7 @@ const teams = [
   { name: "Benjamín", href: "/equipos/benjamin" },
 ]
 
-export function Header() {
+export default function Header() {
   return (
     <div className="fixed z-10 flex h-16 w-full items-center justify-between bg-secondary-foreground p-4">
       <div>
