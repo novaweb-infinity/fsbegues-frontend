@@ -1,16 +1,10 @@
 import type { Metadata } from "next"
-import { Lalezar, Lexend } from "next/font/google"
+import { Lexend } from "next/font/google"
 
 import Footer from "@/components/Layout/Footer"
 import Header from "@/components/Layout/Header"
 
 import "./globals.css"
-
-const lalezar = Lalezar({
-  variable: "--font-lalezar",
-  subsets: ["latin"],
-  weight: "400",
-})
 
 const lexend = Lexend({
   variable: "--font-lexend",

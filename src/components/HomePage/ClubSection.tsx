@@ -28,8 +28,8 @@ export default function ClubSection() {
         {/* Third paragraph */}
         <p className="mb-6 text-lg text-muted-foreground">
           La sede oficial del club se encuentra en el{" "}
-          <span className="font-semibold text-primary">Pabellón Municipal "Jaume Viñas i Pi"</span> de Begues, un
-          espacio moderno y acogedor donde se desarrollan tanto entrenamientos como competiciones.
+          <span className="font-semibold text-primary">Pabellón Municipal &quot;Jaume Viñas i Pi&quot;</span> de Begues,
+          un espacio moderno y acogedor donde se desarrollan tanto entrenamientos como competiciones.
         </p>
 
         {/* Join us button */}

@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Club info section */}
         <div className="mb-4 text-center md:mb-0 md:text-left">
           <h3 className="text-3xl font-bold">F.S.BEGUES</h3>
-          <p>Pabellón Municipal "Jaume Viñas i Pi"</p>
+          <p>Pabellón Municipal &quot;Jaume Viñas i Pi&quot;</p>
           <p>Begues, Baix Llobregat</p>
         </div>
 
