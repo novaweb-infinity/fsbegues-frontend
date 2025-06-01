@@ -59,7 +59,7 @@ export default function PlayersTab({ players, staff }: PlayersTabProps) {
       <h3 className="mb-6 mt-10 text-2xl font-bold">Cuerpo Técnico</h3>
 
       {/* Staff grid */}
-      <div className="grid grid-cols-2 justify-center gap-4 sm:grid-cols-3 md:grid-cols-4">
+      <div className="grid grid-cols-1 justify-center gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {staff.map((person, index) => (
           <Card key={index} className="overflow-hidden">
             {/* Staff image */}
