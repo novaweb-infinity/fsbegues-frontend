@@ -1,4 +1,4 @@
-import type { TeamPageProps } from "@/components/Teams/TeamPage"
+import type { TeamPageProps } from "@/components/Teams"
 
 export const juvenilData: TeamPageProps = {
   teamInfo: {

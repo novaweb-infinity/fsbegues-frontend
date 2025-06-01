@@ -7,7 +7,10 @@ export default function HeroSection() {
 
   return (
     <section className="relative mt-16 h-[50vh] w-full">
+      {/* Background image */}
       <Image src={imageSrc} alt={altText} fill style={{ objectFit: "cover" }} priority />
+
+      {/* Overlay with title */}
       <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 p-4">
         <h1 className="text-6xl font-bold text-white">{title}</h1>
       </div>

@@ -23,14 +23,18 @@ const teams = [
 export default function Header() {
   return (
     <div className="fixed z-10 flex h-16 w-full items-center justify-between bg-secondary-foreground p-4">
+      {/* Club name/logo */}
       <div>
         <Link href="/" className="text-3xl font-bold text-white" passHref>
           F.S.BEGUES
         </Link>
       </div>
+
+      {/* Navigation menu */}
       <div>
         <NavigationMenu>
           <NavigationMenuList>
+            {/* Home link */}
             <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink className={`${navigationMenuTriggerStyle()} !text-lg !text-black`}>
@@ -38,6 +42,8 @@ export default function Header() {
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
+
+            {/* Teams dropdown */}
             <NavigationMenuItem>
               <NavigationMenuTrigger className="!text-lg !text-black">Equipos</NavigationMenuTrigger>
               <NavigationMenuContent>
@@ -57,6 +63,8 @@ export default function Header() {
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
+
+            {/* Calendar link */}
             <NavigationMenuItem>
               <Link href="/calendario" legacyBehavior passHref>
                 <NavigationMenuLink className={`${navigationMenuTriggerStyle()} !text-lg !text-black`}>
@@ -64,6 +72,8 @@ export default function Header() {
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
+
+            {/* Contact link */}
             <NavigationMenuItem>
               <Link href="/contacto" legacyBehavior passHref>
                 <NavigationMenuLink className={`${navigationMenuTriggerStyle()} !text-lg !text-black`}>

@@ -1,4 +1,4 @@
-import NewsCard from "@/components/Home/NewsCard"
+import NewsCard from "@/components/HomePage/NewsCard"
 
 interface NewsItem {
   image: string
@@ -31,21 +31,24 @@ const newsData: NewsItem[] = [
 
 export default function NewsSection() {
   return (
-    <section className="bg-muted px-4 py-12">
-      {/* <div className=""> */}
-      <h2 className="mb-6 text-3xl font-bold">Últimas Noticias</h2>
-      <div className="grid grid-cols-1 gap-6 text-lg md:grid-cols-2 lg:grid-cols-3">
-        {newsData.map((newsItem, index) => (
-          <NewsCard
-            key={index}
-            image={newsItem.image}
-            title={newsItem.title}
-            date={newsItem.date}
-            description={newsItem.description}
-          />
-        ))}
+    <section className="bg-secondary px-2 py-8 sm:px-4 sm:py-12">
+      <div className="mx-auto flex w-full flex-col items-center" style={{ maxWidth: "1040px" }}>
+        {/* Section title */}
+        <h2 className="mb-6 text-3xl font-bold">Últimas Noticias</h2>
+
+        {/* News list */}
+        <div className="flex w-full flex-col gap-6">
+          {newsData.map((newsItem, index) => (
+            <NewsCard
+              key={index}
+              image={newsItem.image}
+              title={newsItem.title}
+              date={newsItem.date}
+              description={newsItem.description}
+            />
+          ))}
+        </div>
       </div>
-      {/* </div> */}
     </section>
   )
 }

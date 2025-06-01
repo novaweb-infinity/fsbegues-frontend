@@ -1,4 +1,4 @@
-import { TeamPage } from "@/components/Teams/TeamPage"
+import TeamPage from "@/components/Teams"
 
 import { benjaminData } from "../../../../data/teams/benjamin"
 
