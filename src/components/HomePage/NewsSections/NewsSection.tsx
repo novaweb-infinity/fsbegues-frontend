@@ -1,4 +1,4 @@
-import NewsCard from "@/components/HomePage/NewsCard"
+import NewsCard from "./NewsCard"
 
 interface NewsItem {
   image: string

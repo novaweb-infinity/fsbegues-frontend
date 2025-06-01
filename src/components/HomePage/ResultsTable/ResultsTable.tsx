@@ -45,13 +45,7 @@ export default function ResultsTable() {
               {/* Table body with results */}
               <TableBody>
                 {results.map((result, index) => (
-                  <ResultRow
-                    key={index}
-                    category={result.category}
-                    result={result.result}
-                    opponent={result.opponent}
-                    status={result.status}
-                  />
+                  <ResultRow key={index} category={result.category} result={result.result} opponent={result.opponent} />
                 ))}
               </TableBody>
             </Table>

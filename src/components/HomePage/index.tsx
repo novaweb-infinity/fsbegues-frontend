@@ -1,7 +1,7 @@
 import ClubSection from "./ClubSection"
 import HeroSection from "./HeroSection"
-import NewsSection from "./NewsSection"
-import ResultsTable from "./ResultsTable"
+import NewsSection from "./NewsSections/NewsSection"
+import ResultsTable from "./ResultsTable/ResultsTable"
 
 export default function HomePage() {
   return (
