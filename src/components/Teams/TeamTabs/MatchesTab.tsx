@@ -10,7 +10,7 @@ export default function MatchesTab({ upcomingMatches }: MatchesTabProps) {
   return (
     <div className="mt-4">
       {/* Section title */}
-      <h3 className="mb-4 text-2xl font-bold">Partidos</h3>
+      <h3 className="mb-4 text-2xl font-bold">Proximos Partidos</h3>
 
       {/* List of upcoming matches */}
       <div className="flex flex-col gap-4">

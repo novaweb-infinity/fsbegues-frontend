@@ -99,7 +99,7 @@ export default function TeamPage({
           <Tabs defaultValue="players">
             <TabsList className="mb-4 grid w-full grid-cols-3">
               <TabsTrigger value="players">Jugadores</TabsTrigger>
-              <TabsTrigger value="matches">Próximos Partidos</TabsTrigger>
+              <TabsTrigger value="matches">Partidos</TabsTrigger>
               <TabsTrigger value="results">Resultados</TabsTrigger>
             </TabsList>
 
