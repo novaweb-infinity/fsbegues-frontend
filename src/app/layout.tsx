@@ -1,10 +1,19 @@
 import type { Metadata } from "next"
-import { Lalezar } from "next/font/google"
+import { Lalezar, Lexend } from "next/font/google"
+
+import Footer from "@/components/Layout/Footer"
+import Header from "@/components/Layout/Header"
 
 import "./globals.css"
 
 const lalezar = Lalezar({
   variable: "--font-lalezar",
+  subsets: ["latin"],
+  weight: "400",
+})
+
+const lexend = Lexend({
+  variable: "--font-lexend",
   subsets: ["latin"],
   weight: "400",
 })
@@ -21,7 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lalezar.variable} antialiased`}>{children}</body>
+      <body className={`${lexend.variable} antialiased`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
